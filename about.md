@@ -25,7 +25,7 @@ Our mission is a community driven website.This is website was made to share basi
 
 - **Online youth Group** - This would be a group that young people can get together and find other christ followers online. This group would making events. It would either be in person events or online events. They may play videos games, movie nights, etc. Using Discord or WhatsApp
 - **Help to Local christ following churchs and events.**
-- **__Fundraising__** - Doing for missionary's, and people in need or making fundraiser known
+- <u>Fundraising</u> - Doing for missionary's, and people in need or making fundraiser known
 - Organized events
 - Community Service and out reaching
 - Online Therapy Groups
@@ -36,3 +36,5 @@ Our mission is a community driven website.This is website was made to share basi
 
 - Become author - Anyone that is a follower of christ can contribute to this website.
 - Become a Youth Group Leader/Helper
+
+
