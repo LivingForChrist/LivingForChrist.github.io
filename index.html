@@ -3,12 +3,45 @@
 
 layout: default
 title: FOC
-headerTitle: "Followers Of Christ"
-headerSubtitle: test
+headerTitle: "Living4Christ"
+headerSubtitle: ""
 
 ---
+<div class="alert alert-danger">
 
+    <h1>Please Note this website is Working In Progress.</h1>
+    <p>feel free to contribute to the website! You can find our github repo at <a
+            href="https://github.com/LivingForChrist/LivingForChrist.github.io"
+            target="_blank">https://github.com/LivingForChrist/LivingForChrist.github.io</a></p>
+    <p>Some articles and authors are temporary. So Don't expect them to be there if you save them Examples. Anything from
+        Jill Smith, Ted Doe, and ChatGPT will not be staying! They are there for Concepts </p>
+</div>
 
-<h1>{{ "Hello World!" | downcase }}</h1>
-<h2>{{ "Welcome to my super Cool Website!!!!!" | capitalize }}</h2>
+<div>
+ <h2>Latest Posts</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for post in site.posts %}
+        <div class="col">
+            <div class="card mb-3" style="width: 540px !important;">
+                <div class="card-body">
+                    {%if post.thumbnail %}
+                    <img src="{{ post.thumbnail }}" class="img-thumbnail rounded-start " alt="{{ page.thumbnail-alt }}">
+                    {% endif %}
+                    <p class="card-title"><span class="fs-5 pe-1"><a href="{{ post.url }}">{{ post.title }}</a></span>
+                        <small class="text-body-secondary text-muted">By {{ post.author }}</small>
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary text-muted"> {{ post.date |
+                            date_to_string }}</small></p>
+                    {% if post.description %}
+                    <p class="card-text">{{ post.description }}</p>
+                    {% else %}
+                    <p class="card-text">{{ post.excerpt | truncate: 200 , "..." }}</p>
+                    {% endif %}
 
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
